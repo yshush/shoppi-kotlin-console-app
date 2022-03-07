@@ -8,9 +8,10 @@ step 2. 사용자 입력값 요청 처리 공통화
 step 3. 프로젝트 전역에서 참조하는 상수
 */
 
-class ShoppingCategory {
+class ShoppingCategory : Screen() {
 
     fun showCategories() {
+        ScreenStack.push(this)
         val categories = arrayOf("패션", "전자기기", "반려동물용품")
         for (category in categories) {
             println(category)
