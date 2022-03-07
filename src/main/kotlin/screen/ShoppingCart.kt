@@ -12,8 +12,7 @@ class ShoppingCart {
                     separator = ", \n",
                     prefix = """
                     ***===================================***        
-                    장바구니에 담은 상품 목록입니다.
-                        
+                    장바구니에 담은 상품 목록입니다.                       
                     """.trimIndent()
                 ) { product ->
                     "카데고리: ${product.categoryLabel} / 상품명: ${product.name} / 수량: ${products[product]}"
